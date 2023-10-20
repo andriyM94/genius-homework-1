@@ -61,7 +61,8 @@ body {
   font-size: 18px;
 }
 
-.header a:hover {
+.header a:hover,
+.footer a:hover {
   color: var(--color-brand-light);
   font-weight: 700;
 }
