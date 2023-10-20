@@ -42,6 +42,10 @@
   --color-first-grey: #4A4A4A;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -54,6 +58,37 @@ body {
   font-family: Robot, sans-serif;
   font-weight: 400;
   columns: var(--color-brand-durk);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 24px;
+}
+
+.title {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--color-brand-durk);
+}
+
+.why-us .title,
+.procedures .title,
+.contacts .title{
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+
+/* header section */
+.header {
+  padding: 32px 0;
 }
 
 .header a {
@@ -67,19 +102,21 @@ body {
   font-weight: 700;
 }
 
-.title {
-  font-family: Play, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  color: var(--color-brand-durk);
-}
-
 .title .title--modeficator,
 .contacts__title .title--modeficator{
   color: var(--color-brand-light);
 }
 
 /* hero section */
+.hero {
+  padding: 125px 0 ;
+}
+
+.hero_content {
+  max-width: 530px;
+  margin-left: 105px;
+}
+
 .hero__title {
   color: var(--color-brand-light);
   font-family: Play, serif;
@@ -87,6 +124,11 @@ body {
   font-weight: 700;
   line-height: 81.5%;
   text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.order_block {
+  max-width: 240px;
 }
 
 .button {
@@ -95,6 +137,8 @@ body {
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   font-weight: 600;
+  padding: 16px 32px;
+  margin-bottom: 14px;
 }
 
 .button:hover {
@@ -106,9 +150,23 @@ body {
   color: var(--color-first-grey);
   font-size: 12px;
   line-height: 150%;
+  text-align: center;
 }
 
 /* about section */
+.about {
+  padding-bottom: 90px;
+}
+
+.about_content-text {
+  padding-top: 40px;
+  max-width: 710px;
+}
+
+.about .title {
+  margin-bottom: 40px;
+}
+
 .about .title .title--modeficator {
 text-transform: capitalize;
 }
@@ -117,6 +175,7 @@ text-transform: capitalize;
   color: var(--color-brand-durk);
   font-size: 22px;
   line-height: 173%;
+  margin-bottom: 40px;
 }
 
 .about__text--bold {
@@ -124,11 +183,29 @@ text-transform: capitalize;
   text-transform: capitalize;
 }
 
+.about_content-images {
+  max-width: 500px;
+}
+
 /* why_us section */
+.why-us {
+  padding: 90px 0 48px 0;
+}
+
 .why-us__itms {
   color: var(--color-defoult-black);
   font-size: 18px;
   line-height: 133%;
+}
+
+.why-us__itms .item {
+  padding: 24px 32px;
+  max-width: 316px;
+  text-align: center;
+}
+
+.item-img {
+  padding: 5px 0 8px 0;
 }
 
 /* procedures section */
@@ -136,6 +213,7 @@ text-transform: capitalize;
   columns: var(--color-defoult-white);
   font-size: 22px;
   line-height: 118%;
+  text-align: center;
 }
 
 /* contacts section */
@@ -148,6 +226,7 @@ text-transform: capitalize;
 /* footer section */
 .footer {
   background: var(--color-brand-durk);
+  padding: 56px 0;
 }
 
 .footer a {
